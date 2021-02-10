@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/bd38cdc239.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
@@ -20,80 +21,101 @@
   </head>
   <body>
     <!-- Header Element -->
-    <header class="bg-hero-img bg-no-repeat bg-cover relative">
-      <div
-        class="bg-theme-purple bg-opacity-40 sm:h-96 flex flex-wrap content-center justify-center px-10 sm:px-24 py-20"
-      >
-        <h1
-          class="max-w-5xl text-white text-center w-full font-light text-lg sm:text-xl md:text-2xl"
+    <header class="bg-couple-img bg-no-repeat bg-cover md:bg-center">
+      <div class="bg-theme-purple bg-opacity-40 sm:h-96">
+        <nav
+          class="px-5 py-3 w-full bg-theme-grey bg-opacity-20 flex flex-row justify-end"
         >
-          "Still round the corner, there may wait, a new road or a secret gate."
-        </h1>
-        <p class="text-white mt-5 text-xs sm:text-sm font-extralight">
-          J.R.R. Tolkien
-        </p>
-        <!-- Nav Element -->
-        <!-- <nav class="z-10 absolute -bottom-7">
-          <span
-            class="block w-full border rounded-md py-2 px-6 border-theme-yellow text-theme-yellow"
-            >DISCOVER</span
+          <i class="sm:hidden fas fa-bars text-white"></i>
+          <ul
+            class="hidden sm:flex list-none flex-row justify-end text-sm space-x-5 text-white font-extralight"
           >
-        </nav> -->
+            <li class="hover:text-theme-yellow">
+              <a href="#next">Upcoming Adventures</a>
+            </li>
+            <li class="hover:text-theme-yellow">
+              <a href="#past">Past Adventures</a>
+            </li>
+            <li class="hover:text-theme-yellow"><a href="#about">About</a></li>
+          </ul>
+        </nav>
+        <div
+          class="flex flex-wrap content-center justify-center px-10 sm:px-32 py-20"
+        >
+          <h1
+            class="text-white text-center w-full font-light text-lg sm:text-xl md:text-2xl"
+          >
+            "Still round the corner, there may wait, a new road or a secret
+            gate."
+          </h1>
+          <p class="text-white mt-5 text-xs sm:text-sm font-extralight">
+            J.R.R. Tolkien
+          </p>
+        </div>
       </div>
     </header>
 
     <!-- Main Element -->
     <main>
       <!-- About Me Element -->
-      <section class="article-sec flex flex-col md:flex-row items-center">
+      <section
+        class="article-sec flex flex-col md:flex-row items-center"
+        id="about"
+      >
         <div
-          class="h-56 sm:h-96 bg-no-repeat bg-cover rounded border-0 bg-couple-img w-full md:bg-right"
+          class="h-56 sm:h-96 md:h-56 lg:h-60 md:order-2 bg-no-repeat bg-cover rounded border-0 bg-hero-img w-full md:bg-left"
         ></div>
-        <div class="flex flex-col items-center md:ml-10">
-          <h2 class="mt-8 md:text-3xl text-gray-900">How it all began</h2>
+        <div class="flex flex-col items-center md:items-start md:mr-12">
+          <h2 class="mt-8 md:mt-0 md:text-3xl text-gray-900">
+            How it all began
+          </h2>
           <hr class="w-1/4 mt-6 border-t border-gray-300" />
-          <p class="mt-6 text-gray-700 font-extralight text-center">
+          <p
+            class="mt-6 text-gray-700 font-extralight text-center md:text-left"
+          >
             Adipiscing a commodo ante nunc accumsan et interdum mi ante
             adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus
             nascetur ac non.
           </p>
           <button
-            class="mt-6 border px-6 py-2 rounded-md bg-theme-purple text-white text-xs tracking-widest"
+            class="focus:outline-none mt-6 border px-6 py-2 rounded-md bg-theme-purple text-white text-xs tracking-widest"
           >
             MORE
           </button>
         </div>
       </section>
       <!-- Travel Dates Element -->
-      <section class="mt-16 bg-no-repeat bg-cover bg-scotland-img relative">
+      <section
+        class="mt-16 bg-no-repeat bg-cover bg-scotland-img relative"
+        id="next"
+      >
         <div
           class="bg-theme-purple bg-opacity-50 flex flex-col items-center px-12 py-16"
         >
           <h2 class="md:text-3xl text-white">Upcoming adventures</h2>
           <hr class="w-1/4 mt-6 border-t border-gray-300" />
-          <!-- <p class="mt-6 text-center text-white font-extralight">
-            Adipiscing a commodo ante nunc accumsan et interdum mi ante
-            adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus
-            nascetur ac non.
-          </p> -->
-          <div class="mt-12">
-            <div class="flex text-white font-extralight text-base">
+          <div class="mt-12 flex flex-col space-y-2">
+            <div
+              class="flex text-white font-extralight text-base bg-theme-rose bg-opacity-20 rounded-md px-5 md:px-14 py-2"
+            >
               <p class="w-28">13 March</p>
               <p>Edinburgh, Scotland</p>
             </div>
-            <div class="flex text-white font-extralight text-base mt-2">
+            <div
+              class="flex text-white font-extralight text-base bg-theme-rose bg-opacity-20 rounded-md px-5 md:px-14 py-2"
+            >
               <p class="w-28">19 March</p>
               <p>Cornwal, Ireland</p>
             </div>
-            <div class="flex text-white font-extralight text-base mt-2">
-              <p class="w-28">01 April</p>
-              <p>Paris, France</p>
-            </div>
-            <div class="flex text-white font-extralight text-base mt-2">
+            <div
+              class="flex text-white font-extralight text-base bg-theme-rose bg-opacity-20 rounded-md px-5 md:px-14 py-2"
+            >
               <p class="w-28">06 April</p>
               <p>Rome, Italy</p>
             </div>
-            <div class="flex text-white font-extralight text-base mt-2">
+            <div
+              class="flex text-white font-extralight text-base bg-theme-rose bg-opacity-20 rounded-md px-5 md:px-14 py-2"
+            >
               <p class="w-28">29 April</p>
               <p>Secret Destination</p>
             </div>
@@ -101,16 +123,14 @@
         </div>
       </section>
       <!-- Article Intro Element -->
-      <section class="article-sec flex flex-col items-center">
+      <section class="article-sec flex flex-col items-center" id="past">
         <h2 class="md:text-3xl text-gray-900">Past adventures</h2>
         <hr class="w-1/4 mt-6 border-t border-gray-300" />
 
         <!-- Article Overview -->
-        <div class="lg:flex space-x-4">
+        <div class="lg:flex lg:space-x-4">
           <!-- Article 1 -->
-          <div
-            class="mt-16 lg:mt-10 flex flex-col items-center shadow-md pb-10"
-          >
+          <div class="mt-10 flex flex-col items-center shadow-md pb-10">
             <div
               class="bg-no-repeat bg-cover bg-center rounded border-0 h-52 sm:h-96 bg-london-img w-full"
             ></div>
@@ -125,7 +145,7 @@
               nascetur ac non.
             </p>
             <button
-              class="mt-6 border px-6 py-2 rounded-md bg-theme-purple text-white text-xs tracking-widest"
+              class="focus:outline-none mt-6 border px-6 py-2 rounded-md bg-theme-purple text-white text-xs tracking-widest"
             >
               MORE
             </button>
@@ -146,7 +166,7 @@
               nascetur ac non.
             </p>
             <button
-              class="mt-6 border px-6 py-2 rounded-md bg-theme-purple text-white text-xs tracking-widest"
+              class="focus:outline-none mt-6 border px-6 py-2 rounded-md bg-theme-purple text-white text-xs tracking-widest"
             >
               MORE
             </button>
@@ -167,7 +187,7 @@
               nascetur ac non.
             </p>
             <button
-              class="mt-6 border px-6 py-2 rounded-md bg-theme-purple text-white text-xs tracking-widest"
+              class="focus:outline-none mt-6 border px-6 py-2 rounded-md bg-theme-purple text-white text-xs tracking-widest"
             >
               MORE
             </button>
@@ -185,12 +205,12 @@
           </p>
           <div class="mt-6 flex flex-col sm:flex-row">
             <button
-              class="border px-6 py-2 rounded-md bg-white text-theme-grey text-xs tracking-widest text-transparent font-medium w-40"
+              class="focus:outline-none border px-6 py-2 rounded-md bg-white text-theme-grey text-xs tracking-widest text-transparent font-medium w-40"
             >
               SIGN UP
             </button>
             <button
-              class="mt-2 sm:mt-0 border px-6 py-2 rounded-md text-white text-xs tracking-widest sm:ml-3 w-40"
+              class="focus:outline-none mt-2 sm:mt-0 border px-6 py-2 rounded-md text-white text-xs tracking-widest sm:ml-3 w-40"
             >
               LEARN MORE
             </button>
@@ -200,15 +220,28 @@
     </main>
 
     <!-- Footer Element -->
-    <footer class="bg-theme-purple text-xs sm:text-sm py-6 px-12 flex flex-col">
+    <footer class="bg-theme-purple text-sm py-6 px-12 flex flex-col">
       <!-- Social Media Icons -->
-      <div></div>
+      <div class="flex flex-col items-center">
+        <div
+          class="flex flex-row space-x-5 justify-center mt-5 text-theme-rose"
+        >
+          <i class="fab fa-twitter hover:text-theme-yellow"></i>
+          <i class="fab fa-facebook-f hover:text-theme-yellow"></i
+          ><i class="fab fa-instagram hover:text-theme-yellow"></i
+          ><i class="fab fa-tiktok hover:text-theme-yellow"></i
+          ><i class="fas fa-envelope hover:text-theme-yellow"></i>
+        </div>
+        <hr class="w-1/4 mt-8 border-t border-theme-rose" />
+      </div>
 
       <!-- Footer Links -->
-      <div class="flex flex-col text-center text-theme-rose">
+      <div
+        class="flex mt-6 flex-row justify-center space-x-5 font-extralight text-theme-rose"
+      >
         <p class="hover:text-theme-yellow">About Me</p>
-        <p class="mt-1 hover:text-theme-yellow">Cooperations</p>
-        <p class="mt-1 hover:text-theme-yellow">Contact</p>
+        <p class="hover:text-theme-yellow">Cooperations</p>
+        <p class="hover:text-theme-yellow">Contact</p>
       </div>
     </footer>
   </body>
