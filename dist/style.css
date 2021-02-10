@@ -552,6 +552,7 @@ video {
 }
 
 h1 {
+  font-weight: 200;
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -602,10 +603,75 @@ h3 {
   }
 }
 
-.article-sec {
-  margin-top: 4rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+.travel-date {
+  --tw-bg-opacity: 1;
+  background-color: rgba(157, 141, 143, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  border-radius: 0.375rem;
+  display: flex;
+  font-weight: 200;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .travel-date {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .travel-date {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
+.button-article {
+  --tw-bg-opacity: 1;
+  background-color: rgba(70, 52, 78, var(--tw-bg-opacity));
+  border-radius: 0.375rem;
+  border-width: 1px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 1.5rem;
+}
+
+.button-article:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-article {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  letter-spacing: 0.1em;
+}
+
+.image-article {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.25rem;
+  border-width: 0px;
+  height: 13rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .image-article {
+    height: 24rem;
+  }
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -4427,31 +4493,31 @@ h3 {
 }
 
 .bg-hero-img {
-  background-image: url('/img/hero-1-min.jpg');
+  background-image: url('/img/hero-1.jpg');
 }
 
 .bg-couple-img {
-  background-image: url('/img/hero-img-min.jpg');
+  background-image: url('/img/hero-img.jpg');
 }
 
 .bg-scotland-img {
-  background-image: url('/img/scotland-min.jpg');
+  background-image: url('/img/scotland.jpg');
 }
 
 .bg-prague-img {
-  background-image: url('/img/prague-min.jpg');
+  background-image: url('/img/prague.jpg');
 }
 
 .bg-london-img {
-  background-image: url('/img/london-min.jpg');
+  background-image: url('/img/london.jpg');
 }
 
 .bg-munich-img {
-  background-image: url('/img/munich-min.jpg');
+  background-image: url('/img/munich.jpg');
 }
 
 .bg-budapest-img {
-  background-image: url('/img/budapest-min.jpg');
+  background-image: url('/img/budapest.jpg');
 }
 
 .from-transparent {
@@ -36206,31 +36272,31 @@ h3 {
   }
 
   .sm\:bg-hero-img {
-    background-image: url('/img/hero-1-min.jpg');
+    background-image: url('/img/hero-1.jpg');
   }
 
   .sm\:bg-couple-img {
-    background-image: url('/img/hero-img-min.jpg');
+    background-image: url('/img/hero-img.jpg');
   }
 
   .sm\:bg-scotland-img {
-    background-image: url('/img/scotland-min.jpg');
+    background-image: url('/img/scotland.jpg');
   }
 
   .sm\:bg-prague-img {
-    background-image: url('/img/prague-min.jpg');
+    background-image: url('/img/prague.jpg');
   }
 
   .sm\:bg-london-img {
-    background-image: url('/img/london-min.jpg');
+    background-image: url('/img/london.jpg');
   }
 
   .sm\:bg-munich-img {
-    background-image: url('/img/munich-min.jpg');
+    background-image: url('/img/munich.jpg');
   }
 
   .sm\:bg-budapest-img {
-    background-image: url('/img/budapest-min.jpg');
+    background-image: url('/img/budapest.jpg');
   }
 
   .sm\:from-transparent {
@@ -67907,31 +67973,31 @@ h3 {
   }
 
   .md\:bg-hero-img {
-    background-image: url('/img/hero-1-min.jpg');
+    background-image: url('/img/hero-1.jpg');
   }
 
   .md\:bg-couple-img {
-    background-image: url('/img/hero-img-min.jpg');
+    background-image: url('/img/hero-img.jpg');
   }
 
   .md\:bg-scotland-img {
-    background-image: url('/img/scotland-min.jpg');
+    background-image: url('/img/scotland.jpg');
   }
 
   .md\:bg-prague-img {
-    background-image: url('/img/prague-min.jpg');
+    background-image: url('/img/prague.jpg');
   }
 
   .md\:bg-london-img {
-    background-image: url('/img/london-min.jpg');
+    background-image: url('/img/london.jpg');
   }
 
   .md\:bg-munich-img {
-    background-image: url('/img/munich-min.jpg');
+    background-image: url('/img/munich.jpg');
   }
 
   .md\:bg-budapest-img {
-    background-image: url('/img/budapest-min.jpg');
+    background-image: url('/img/budapest.jpg');
   }
 
   .md\:from-transparent {
@@ -99608,31 +99674,31 @@ h3 {
   }
 
   .lg\:bg-hero-img {
-    background-image: url('/img/hero-1-min.jpg');
+    background-image: url('/img/hero-1.jpg');
   }
 
   .lg\:bg-couple-img {
-    background-image: url('/img/hero-img-min.jpg');
+    background-image: url('/img/hero-img.jpg');
   }
 
   .lg\:bg-scotland-img {
-    background-image: url('/img/scotland-min.jpg');
+    background-image: url('/img/scotland.jpg');
   }
 
   .lg\:bg-prague-img {
-    background-image: url('/img/prague-min.jpg');
+    background-image: url('/img/prague.jpg');
   }
 
   .lg\:bg-london-img {
-    background-image: url('/img/london-min.jpg');
+    background-image: url('/img/london.jpg');
   }
 
   .lg\:bg-munich-img {
-    background-image: url('/img/munich-min.jpg');
+    background-image: url('/img/munich.jpg');
   }
 
   .lg\:bg-budapest-img {
-    background-image: url('/img/budapest-min.jpg');
+    background-image: url('/img/budapest.jpg');
   }
 
   .lg\:from-transparent {
@@ -131309,31 +131375,31 @@ h3 {
   }
 
   .xl\:bg-hero-img {
-    background-image: url('/img/hero-1-min.jpg');
+    background-image: url('/img/hero-1.jpg');
   }
 
   .xl\:bg-couple-img {
-    background-image: url('/img/hero-img-min.jpg');
+    background-image: url('/img/hero-img.jpg');
   }
 
   .xl\:bg-scotland-img {
-    background-image: url('/img/scotland-min.jpg');
+    background-image: url('/img/scotland.jpg');
   }
 
   .xl\:bg-prague-img {
-    background-image: url('/img/prague-min.jpg');
+    background-image: url('/img/prague.jpg');
   }
 
   .xl\:bg-london-img {
-    background-image: url('/img/london-min.jpg');
+    background-image: url('/img/london.jpg');
   }
 
   .xl\:bg-munich-img {
-    background-image: url('/img/munich-min.jpg');
+    background-image: url('/img/munich.jpg');
   }
 
   .xl\:bg-budapest-img {
-    background-image: url('/img/budapest-min.jpg');
+    background-image: url('/img/budapest.jpg');
   }
 
   .xl\:from-transparent {
@@ -163010,31 +163076,31 @@ h3 {
   }
 
   .\32xl\:bg-hero-img {
-    background-image: url('/img/hero-1-min.jpg');
+    background-image: url('/img/hero-1.jpg');
   }
 
   .\32xl\:bg-couple-img {
-    background-image: url('/img/hero-img-min.jpg');
+    background-image: url('/img/hero-img.jpg');
   }
 
   .\32xl\:bg-scotland-img {
-    background-image: url('/img/scotland-min.jpg');
+    background-image: url('/img/scotland.jpg');
   }
 
   .\32xl\:bg-prague-img {
-    background-image: url('/img/prague-min.jpg');
+    background-image: url('/img/prague.jpg');
   }
 
   .\32xl\:bg-london-img {
-    background-image: url('/img/london-min.jpg');
+    background-image: url('/img/london.jpg');
   }
 
   .\32xl\:bg-munich-img {
-    background-image: url('/img/munich-min.jpg');
+    background-image: url('/img/munich.jpg');
   }
 
   .\32xl\:bg-budapest-img {
-    background-image: url('/img/budapest-min.jpg');
+    background-image: url('/img/budapest.jpg');
   }
 
   .\32xl\:from-transparent {

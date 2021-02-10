@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-2xl;
+    @apply text-2xl font-extralight;
   }
   h2 {
     @apply text-2xl font-light;
@@ -15,7 +15,13 @@
 }
 
 @layer components {
-  .article-sec {
-    @apply mt-16 px-12;
+  .travel-date {
+    @apply flex text-white font-extralight text-sm sm:text-base bg-theme-rose bg-opacity-20 rounded-md px-5 md:px-14 py-2;
+  }
+  .button-article {
+    @apply focus:outline-none mt-6 border px-6 py-2 rounded-md bg-theme-purple text-white text-xs tracking-widest;
+  }
+  .image-article {
+    @apply bg-no-repeat bg-cover rounded border-0 h-52 sm:h-96 w-full;
   }
 }
